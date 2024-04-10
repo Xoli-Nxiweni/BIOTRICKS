@@ -41,25 +41,22 @@ nav ul li a {
 
 
 /* carousel styling */
-.carousel {
-    height: 75vh;
-}
+.carousel ,
 .carousel-item > img {
-    height: 75vh;
+    height: 60vh;
 }
 
 /* footer styling */
 footer {
     background-color: rgb(191, 191, 191);
-    padding: 20px;
+    padding: 10px;
     position: fixed;
-    bottom: 0;
     width: 100%;
+    height: fit-content;
 }
 footer p{
     font-size: 10px;
     text-align: center;
-    padding: 20px;
 }
 footer a {
     color:#1F51FF;
@@ -93,4 +90,16 @@ footer a img {
 }
 footer a img:hover {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+.footer__socialmedia{
+    height: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+}
+.footer__copyright{
+    height: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
 }
