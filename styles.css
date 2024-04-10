@@ -7,11 +7,13 @@ a {
     color: black;
 }
 
-/* HEADER  */
+/* header styling  */
 .header{
     height: 100px;
-    width: 98vw;
-    padding: 8px;
+    width: 100%;
+    background-color: #333;
+    color: white;
+    padding: 10px;
     display: flex;
     justify-content: space-between;
 }
@@ -22,6 +24,7 @@ a {
 nav > ul {
     height: 100%;
     width: 50vw;
+    list-style-type: none;
     display: flex;
     justify-content: space-between;
 }
@@ -31,8 +34,13 @@ nav > ul > li {
     display: flex;
     align-items: center;
 }
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
 
-/* BANNER */
+
+/* carousel styling */
 .carousel {
     height: 75vh;
 }
@@ -40,8 +48,49 @@ nav > ul > li {
     height: 75vh;
 }
 
-/* INTRO */
-
-/* ARTICLES */
-
-/* FOOTER */
+/* footer styling */
+footer {
+    background-color: rgb(191, 191, 191);
+    padding: 20px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+footer p{
+    font-size: 10px;
+    text-align: center;
+    padding: 20px;
+}
+footer a {
+    color:#1F51FF;
+    background-color: #fff;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 50%;
+    box-shadow: 2px 2px 4px rgba(31, 81, 255, 0.3); 
+    transition: transform 0.3s, box-shadow 0.3s;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 5px;
+    font-size: 20px;
+    transition: all .4s ease-in-out;
+}
+footer a:hover {
+    color: #39FF14; 
+}
+footer a .icon-container {
+    display: flex;
+    width: 40px; 
+    height: 40px; 
+    border-radius: 50%;
+    overflow: hidden; 
+    margin-right: 10px;
+}
+footer a img {
+    width: 100%; 
+    height: auto; 
+}
+footer a img:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
