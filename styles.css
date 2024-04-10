@@ -1,0 +1,76 @@
+
+
+
+.Intro-section{
+    display: flex;
+    justify-content: space-between;
+    margin: 15px;
+    
+}
+.Intro{
+    background-color: aquamarine;
+    padding: 15px;
+}
+#Intro-image{
+    background-color: rgb(131, 131, 102);
+    width: 140rem;
+    padding: 15px;
+}
+
+.Card-section{
+    display: flex;
+    background-color: rgb(193, 193, 216);
+    margin: 15px;
+    padding: 15px;
+    height: 500px;
+    justify-content: space-between;
+    
+}
+
+.SFA-Box{
+    display: flex;
+    width:50% ;
+    height: px;
+    background-color: burlywood;
+    padding: 2%;
+    margin: 2%;
+    border: 5%;
+    box-shadow: 15%;
+}
+
+.SFA-Box h2{
+    color: blue;
+    
+}
+#SFAimage{
+    background-color: bisque;
+    width: 50%;
+}
+
+.SFAinfo-box{
+    width: 50%;
+    background-color: ;
+}
+
+.TFA-Box h2{
+    color: blue;
+}
+
+.TFA-Box{
+   width: 50%;
+   background-color: burlywood;
+   padding: 2%;
+   margin: 2%;
+   display: flex;
+   
+}
+
+#TFAimage{
+    background-color: bisque;
+    width: 50%;
+}
+
+.TFAinfor-box{
+    width: 50%;
+
+}
