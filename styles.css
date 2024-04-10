@@ -8,6 +8,7 @@
     list-style: none;
     text-decoration: none;
     font-family: 'poppins', sans-serif;
+    scroll-behavior: smooth;
 }
 ::selection{
     background: #000;
@@ -72,6 +73,7 @@ p{
 .authSection div h1{
     text-align: center;
     padding: 15px;
+    font-size: 1.5em;
 }
 .authSection div p{
     padding: 5px 15px;
@@ -107,28 +109,35 @@ a {
 
 /* header styling  */
 .header{
-    height: 100px;
+    position: fixed;
+    z-index: 1;
     width: 100%;
     background-color: #333;
-    color: white;
-    padding: 10px;
+    padding: 0px 10%;
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
-.logo, .logo > img {
+/* .logo, .logo > img {
     height: 100%;
     min-width: 250px;
+} */
+.logo{
+    /* background: #1F51FF; */
+    z-index: 1;
 }
-nav > ul {
-    height: 100%;
-    width: 50vw;
+.logo img{
+    width: 120px;
+}
+nav ul {
+    width: 30vw;
     list-style-type: none;
     display: flex;
     justify-content: space-between;
 }
-nav > ul > li {
-    font-size: 24px;
-    font-weight: 600;
+nav ul li {
+    font-size: 20px;
+    font-weight: bold;
     display: flex;
     align-items: center;
 }
@@ -139,18 +148,26 @@ nav ul li a {
 
 
 /* carousel styling */
+#carouselExampleIndicators{
+    padding: 120px 0 0 0;
+}
 .carousel ,
 .carousel-item > img {
-    height: 60vh;
+    height: 420px;
+}
+.carousel-control-next,
+.carousel-control-prev{
+    position: absolute;
+    top: 50%;
 }
 
 /* footer styling */
 footer {
     background-color: rgb(191, 191, 191);
     padding: 10px;
-    position: fixed;
+    /* position: fixed; */
     width: 100%;
-    height: fit-content;
+    /* height: fit-content; */
 }
 footer p{
     font-size: 10px;
