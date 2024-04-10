@@ -3,64 +3,77 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <script src="script.js" defer></script>
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
-    <title>Document</title>
+    <title>BIOtricks</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" 
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="./styles.css">
 </head>
 <body>
-    <!-- <section class="carousel">
-        carousel section
-    </section> -->
-    <section class="introduction">
-        <div class="information">
-            <h1>Biometrics</h1>
-            <p>
-                Biometrics is the science of using unique physical or behavioral traits to identify individuls, relying on the principle that each person possesses distinct biological characteristics that can be measured and analyzed. It is a technology that provedes both security and convenience. From unlocking smartphones with a fingerprint to airports scanning faces for security clearance, biometrics is revolutionizing how we verify identity in various aspects of daily life.
-            </p>
-            <p>
-                These characteristics include fingerprints, iris patterns, facial features, voiceprints, and even gait recognition. These are dificult to replicate. They can not be shered, lost or stolen. And are always conveniently there and ready to be used when needed.  
-            </p>
-            
+    <!-- HEADER -->
+    <header class="header">
+        <div class="logo">
+            <a href="#"><img src="" alt="Logo"></a>
         </div>
-        <div class="informationImage">
-            <img src="/Assets/biometric-authentication-software--fingerprint.jpg">
+        <nav>
+            <ul>
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./about.html">About</a></li>
+                <li><a href="./contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!-- BANNER -->
+    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 5"></button>
         </div>
-    </section>
-    <section class="wrapper">
-        <button class="btn2 leftBtn"><i class="fa fa-chevron-left" aria-hidden="true"></i></button>
-        <div class="authSection">
-            
-            <div class="singleFactorAuth">
-                <h1>Single Factor Authentication</h1>
-                <img src="/Assets/SFA.jpg" alt="">
-                <p>
-                    Single-factor authentication (SFA) is a method of verifying a user's identity by requiring only one type of credential. This is usually something the user knows, like a password or PIN. It is like using a basic lock on your door. It's the most fundamental way of confirming your identity online.
-                </p>
-                <p>
-                    While Single-factor authentication is convenient, it is also less secure compared to multi-factor authentication. It's vulnerable to various security threats, like password guessing or phishing attacks, where hackers can easily gain access to your accounts if they crack your password.
-                </p>
-                <a href="MoreInfo.html#SFA"><button class="btn">Read More</button></a>
+        <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="2500">
+                <img src="./Assets/Biometrics.jpg" class="d-block w-100" alt="...">
             </div>
-            <div class="twoFactorAuth">
-                <h1>Two Factor Authentication</h1>
-                <img src="/Assets/TFA.jpg" alt="">
-                <p>
-                    While single factor-authentication (2FA) has that one glaring weakness, two-factor authentication beefs up the security game a litle. Instead of relying on one type of credential like password to grant the user access, this method will require an additional type of credential. this is usualy in a form of something the user has, like a smart card or even a code sent directly to their phone. It adds an extra layer of protection against common threats like phishing attacks and password breaches. This way, even if someone were to guess the user's password they would still hit another roadblock.
-                </p>
-                <a href="MoreInfo.html#TFA"><button class="btn">Read More</button></a>
+            <div class="carousel-item" data-bs-interval="5500">
+                <img src="./Assets/Bio.jpg" class="d-block w-100" alt="...">
             </div>
-            <div class="multiFactorAuth">
-                <h1>Multi-Factor Authentication</h1>
-                <img src="/Assets/MFA.jpg" alt="">
-                <p>Multi-factor authentication (MFA) is a method of verifying a user's identity by requiring  two or more type of credentials. These are usually in a form of something the user knows (like  a password, PIN, or answers to security questions.), something they have (.e.g,  physical devices like smartphones, security tokens, or smart cards that generate or receive one-time codes.) and something they are, which refers to biometric identifiers such as fingerprints, facial recognition, or retina scans. </p>
-                <a href="MoreInfo.html#MFA"><button class="btn">Read More</button></a>
+            <div class="carousel-item" data-bs-interval="5500">
+                <img src="./Assets/SingleAuth2.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item" data-bs-interval="5500">
+                <img src="./Assets/SingleAuth.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item" data-bs-interval="5500">
+                <img src="./Assets/Biometrics2.jpg" class="d-block w-100" alt="...">
             </div>
         </div>
-        <button class="btn2 rightBtn"><i class="fa fa-chevron-right"></i></button>
-    </section>
-</body>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+    <!-- INTRO -->
+    <!-- ARTICLES -->
+    <!-- FOOTER -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" 
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" 
+        crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" 
+        integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" 
+        crossorigin="anonymous">
+    </script>
+<!-- <body> -->
+    <footer>
+        <a href="https://www.facebook.com/"><i class="fab fa-facebook"></i></a>
+        <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
+        <a href="https://twitter.com/"><i class="fab fa-twitter"></i></a>
+        <p><i class="fa fa-copyright" aria-hidden="true"></i> BioTricks 2024. All rights Reserved</p>
+    </footer>
 </html>
