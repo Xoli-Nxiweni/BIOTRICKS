@@ -3,9 +3,110 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
+    <link rel="stylesheet" href="styles.css">
+    <title>Document</title>
 </head>
 <body>
-    
+    <section class="carousel">
+        <!-- carousel section -->
+    </section>
+    <section class="introduction">
+        <div class="information">
+            <h1>Biometrics</h1>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+                Cumque provident aut velit odio rerum repellendus mollitia 
+                doloribus optio, laudantium, at, dignissimos quibusdam officiis. 
+                Praesentium nisi deserunt hic ab dolore! Eaque, nulla aspernatur 
+                voluptate fuga corrupti consectetur perspiciatis ipsum totam. Quidem 
+                numquam, nam quo error necessitatibus omnis doloremque fuga ratione saepe.</p>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+                Cumque provident aut velit odio rerum repellendus mollitia 
+                doloribus optio, laudantium, at, dignissimos quibusdam officiis. 
+                Praesentium nisi deserunt hic ab dolore! Eaque, nulla aspernatur 
+                voluptate fuga corrupti consectetur perspiciatis ipsum totam. Quidem 
+                numquam, nam quo error necessitatibus omnis doloremque fuga ratione saepe.</p>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+                Cumque provident aut velit odio rerum repellendus mollitia 
+                doloribus optio, laudantium, at, dignissimos quibusdam officiis. 
+                Praesentium nisi deserunt hic ab dolore! Eaque, nulla aspernatur 
+                voluptate fuga corrupti consectetur perspiciatis ipsum totam. Quidem 
+                numquam, nam quo error necessitatibus omnis doloremque fuga ratione saepe.</p>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+                Cumque provident aut velit odio rerum repellendus mollitia 
+                doloribus optio, laudantium, at, dignissimos quibusdam officiis. 
+                Praesentium nisi deserunt hic ab dolore! Eaque, nulla aspernatur 
+                voluptate fuga corrupti consectetur perspiciatis ipsum totam. Quidem 
+                numquam, nam quo error necessitatibus omnis doloremque fuga ratione saepe.</p>
+        </div>
+        <div class="informationImage">
+            <img src="">
+        </div>
+    </section>
+    <section class="wrapper">
+        <button class="btn2"><</button>
+        <div class="authSection">
+            
+            <div class="singleFactorAuth">
+                <h1>Single Factor Authentication</h1>
+                <img src="" alt="">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa consequatur fugit obcaecati ab inventore, saepe natus ut dignissimos illum accusamus veritatis nihil exercitationem iure vitae distinctio. Ducimus omnis ad suscipit dolores est reiciendis enim incidunt libero ipsam repellat, voluptatum aspernatur eum pariatur nemo, qui velit. Pariatur suscipit ipsam ea molestias.</p>
+                <button class="btn">Read More</button>
+            </div>
+            <div class="twoFactorAuth">
+                <h1>Two Factor Authentication</h1>
+                <img src="" alt="">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa consequatur fugit obcaecati ab inventore, saepe natus ut dignissimos illum accusamus veritatis nihil exercitationem iure vitae distinctio. Ducimus omnis ad suscipit dolores est reiciendis enim incidunt libero ipsam repellat, voluptatum aspernatur eum pariatur nemo, qui velit. Pariatur suscipit ipsam ea molestias.</p>
+                <button class="btn">Read More</button>
+            </div>
+            <div class="multiFactorAuth">
+                <h1>Multi-Factor Authentication</h1>
+                <img src="" alt="">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa consequatur fugit obcaecati ab inventore, saepe natus ut dignissimos illum accusamus veritatis nihil exercitationem iure vitae distinctio. Ducimus omnis ad suscipit dolores est reiciendis enim incidunt libero ipsam repellat, voluptatum aspernatur eum pariatur nemo, qui velit. Pariatur suscipit ipsam ea molestias.</p>
+                <button class="btn">Read More</button>
+            </div>
+        </div>
+        <button class="btn2">></button>
+    </section>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+        const btnLeft = document.querySelector(".btn2:first-of-type");
+        const btnRight = document.querySelector(".btn2:last-of-type");
+        const authSection = document.querySelector(".authSection");
+        const authContainers = authSection.children;
+
+        let currentIndex = 0; // Track the current index of the visible container
+
+  // Function to update the visibility of containers based on the current index
+  const updateVisibility = () => {
+    for (let i = 0; i < authContainers.length; i++) {
+      if (i === currentIndex || i === currentIndex + 1) {
+        authContainers[i].style.display = "flex";
+      } else {
+        authContainers[i].style.display = "none";
+      }
+    }
+  };
+
+  // Initialize visibility
+  updateVisibility();
+
+  // Event listener for the left button
+  btnLeft.addEventListener("click", function () {
+    if (currentIndex > 0) {
+      currentIndex--;
+      updateVisibility();
+    }
+  });
+
+  // Event listener for the right button
+  btnRight.addEventListener("click", function () {
+    if (currentIndex < authContainers.length - 2) {
+      currentIndex++;
+      updateVisibility();
+    }
+  });
+});
+
+    </script>
 </body>
 </html>
