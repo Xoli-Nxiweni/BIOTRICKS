@@ -1,4 +1,8 @@
 /* Style for navbar */
+*{
+    margin: 0;
+    padding: 0;
+}
 nav {
     background-color: #333;
     color: white;
@@ -18,18 +22,22 @@ nav ul li a {
     text-decoration: none;
 }
 
-
+/* footer styling */
 footer {
-    background-color: white;
-    color: white;
-    text-align: left; 
+    background-color: rgb(191, 191, 191);
     padding: 20px;
     position: fixed;
     bottom: 0;
     width: 100%;
 }
+footer p{
+    font-size: 10px;
+    text-align: center;
+    padding: 20px;
+}
 footer a {
     color:#1F51FF;
+    background-color: #fff;
     text-decoration: none;
     padding: 10px;
     border-radius: 50%;
@@ -39,14 +47,14 @@ footer a {
     justify-content: center;
     align-items: center;
     margin: 0 5px;
-    width: 40px;
-    height: 40px;
+    font-size: 20px;
+    transition: all .4s ease-in-out;
 }
 footer a:hover {
     color: #39FF14; 
 }
 footer a .icon-container {
-    display: inline-block;
+    display: flex;
     width: 40px; 
     height: 40px; 
     border-radius: 50%;
