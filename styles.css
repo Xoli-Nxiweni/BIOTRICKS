@@ -1,3 +1,101 @@
+
+
+/* Xoli's Contributions */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    font-family: 'poppins', sans-serif;
+}
+::selection{
+    background: #000;
+    color: #fff;
+}
+p{
+    font-size: 14px;
+}
+.introduction{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    padding: 20px 10%;
+    align-items: center;
+    height: 100vh;
+    background: snow;
+}
+.informationImage img{
+    height: 350px;
+}
+.wrapper{
+    display: flex;
+    padding: 0 10%;
+    align-items: center;
+    background: #9898985d;
+}
+.authSection{
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+    gap: 20px;
+    padding: 20px;
+    grid-row: auto;
+}
+.authSection div:last-child{
+    display: none;
+}
+.authSection div{
+    position: relative;
+    box-shadow: 0 0 10px;
+    display: flex;
+    flex-direction: column;
+    background: #fff;
+}
+.authSection div .btn{
+    margin: 10px 15px 10px 70%;
+    padding: 10px 15px;
+    border: none;
+    background: blue;
+    font-weight: bold;
+    border: 1px solid blue;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 10px;
+    text-transform: uppercase;
+    transition: all .4s ease-in-out;
+}
+.authSection div .btn:hover{
+    color: blue;
+    background: transparent;
+    border: 1px solid blue;
+}
+.authSection div h1{
+    text-align: center;
+    padding: 15px;
+}
+.authSection div p{
+    padding: 5px 15px;
+}
+.authSection div img{
+    /* box-shadow: 0 0 10px; */
+    height: 300px;
+    padding: 1%;
+    margin: 0 0 10px 0;
+    transition: all .4s ease-in-out;
+}
+.btn2{
+    padding: 10px;
+    background: transparent;
+    font-size: 2em;
+    border: none;
+    cursor: pointer;
+    transition: all .4s ease-in-out;
+}
+.btn2:hover{
+    transform: scale(1.2);
+}
+/* End of Xoli's Contributions */
+
 * {
     padding: 0;
     margin: 0;
