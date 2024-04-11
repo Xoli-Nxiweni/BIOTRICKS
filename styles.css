@@ -21,9 +21,8 @@ p{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 30px;
-    padding: 20px 10%;
+    padding: 250px 10% 100px;
     align-items: center;
-    height: 100vh;
     background: snow;
 }
 .informationImage img{
@@ -153,7 +152,7 @@ nav ul li a {
 }
 .carousel ,
 .carousel-item > img {
-    height: 420px;
+    height: 320px;
 }
 .carousel-control-next,
 .carousel-control-prev{
