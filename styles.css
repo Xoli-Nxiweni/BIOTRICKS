@@ -14,7 +14,7 @@
 }
 a {
     text-decoration: none;
-    color: black;
+    color: white;
 }
 p {
     font-size: 14px;
@@ -37,7 +37,6 @@ p {
     align-items: center;
 }
 .logo{
-    /* background: #1F51FF; */
     z-index: 1;
 }
 .logo img{
@@ -64,13 +63,8 @@ nav ul li a {
 /* carousel styling */
 .carousel ,
 .carousel-item > img {
-    height: 420px;
+    height: 350px;
     width: 100%;
-}
-.carousel-control-next,
-.carousel-control-prev{
-    position: absolute;
-    top: 75%;
 }
 
 
@@ -79,13 +73,10 @@ nav ul li a {
     height: 55vh;
     width: 100%;
     padding: 10px 0 10px 100px;
-    background: snow;
+    background-color: snow;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 30px;
-    padding: 250px 10% 100px;
-    align-items: center;
-    background: snow;
     align-items: center;
 }
 .informationImage img{
@@ -117,8 +108,12 @@ nav ul li a {
     flex-direction: column;
     background: #fff;
 }
+.authSection div span{
+    display: flex;
+    justify-content: flex-end;
+}
 .authSection div .btn{
-    margin: 10px 15px 10px 70%;
+    margin: 10px 15px;
     padding: 10px 15px;
     border: none;
     background: blue;
@@ -162,80 +157,17 @@ nav ul li a {
     transform: scale(1.2);
 }
 
-* {
-    padding: 0;
-    margin: 0;
-}
-a {
-    text-decoration: none;
-    color: black;
-}
-
-/* header styling  */
-.header{
-    position: fixed;
-    z-index: 1;
-    width: 100%;
-    background-color: #333;
-    padding: 0px 10%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-/* .logo, .logo > img {
-    height: 100%;
-    min-width: 250px;
-} */
-.logo{
-    /* background: #1F51FF; */
-    z-index: 1;
-}
-.logo img{
-    width: 120px;
-}
-nav ul {
-    width: 30vw;
-    list-style-type: none;
-    display: flex;
-    justify-content: space-between;
-}
-nav ul li {
-    font-size: 20px;
-    font-weight: bold;
-    display: flex;
-    align-items: center;
-}
-nav ul li a {
-    color: white;
-    text-decoration: none;
-}
-
-
-/* carousel styling */
-#carouselExampleIndicators{
-    padding: 120px 0 0 0;
-}
-.carousel ,
-.carousel-item > img {
-    height: 320px;
-}
-.carousel-control-next,
-.carousel-control-prev{
-    position: absolute;
-    top: 50%;
-}
 
 /* footer styling */
 footer {
     background-color: rgb(191, 191, 191);
     padding: 10px;
-    /* position: fixed; */
     width: 100%;
-    /* height: fit-content; */
 }
 footer p{
     font-size: 10px;
     text-align: center;
+    margin: 0;
 }
 footer a {
     color:#1F51FF;
@@ -273,15 +205,19 @@ footer a img:hover {
 .footer__socialmedia{
     height: 50%;
     width: 100%;
+    padding: 5px;
     display: flex;
-    justify-content: flex-start;
+    justify-content: center;
 }
 .footer__copyright{
     height: 50%;
     width: 100%;
+    padding: 5px;
     display: flex;
     justify-content: center;
 }
+
+
 /* Contact Section */
 .contact {
     display: flex;
