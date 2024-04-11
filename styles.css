@@ -236,7 +236,7 @@ nav ul li a {
     grid-template-columns: repeat(3, 1fr);
     justify-content: center;
     grid-row: auto;
-    padding: 20px;
+    padding: 20px 10%;
 }
 
 .about-box {
