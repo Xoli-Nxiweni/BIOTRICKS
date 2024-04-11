@@ -217,3 +217,56 @@ footer a img:hover {
     display: flex;
     justify-content: center;
 }
+/* Contact Section */
+.contact {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 50px 50px;
+}
+
+.contact__info,
+.contact__form {
+    flex: 1;
+}
+
+.contact__info h1,
+.contact__form h2 {
+    margin-bottom: 20px;
+}
+
+.contact__info ul {
+    list-style: none;
+    padding: 0;
+}
+
+.contact__info ul li {
+    margin-bottom: 10px;
+}
+
+.contact__form form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact__form input,
+.contact__form textarea {
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.contact__form button {
+    padding: 10px 20px;
+    background-color: #1F51FF;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.contact__form button:hover {
+    background-color: #0e3aa8
+}
