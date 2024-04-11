@@ -230,6 +230,33 @@ nav ul li a {
     display: none;
 }
 
+/* About */
+.about-section {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+    grid-row: auto;
+    padding: 20px;
+}
+
+.about-box {
+    background-color: #f2f2f2;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px;
+    width: 300px;
+}
+
+.about-box h2 {
+    color: #1F51FF;
+    margin-bottom: 10px;
+}
+
+.about-box p {
+    color: #333;
+    line-height: 1.6;
+}
+
 /* footer styling */
 footer {
     background-color: rgb(191, 191, 191);
