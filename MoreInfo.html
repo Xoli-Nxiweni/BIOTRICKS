@@ -24,36 +24,95 @@
     </header> 
     <div class="header__background"></div>
     <!-- ARTICLES -->
-    <section>
-        <div id="SFA"></div>
-        <div id="TFA"></div>
-        <div id="MFA">
-            <p>
-                Going back to the main topic, biomatrics, and the advantages this provides in multi-factor    
-                authentication and enhancing security. The first point will be the fact that biometrics provide a 
-                highly secure method of authentication because they are based on unique physical characteristics 
-                such as fingerprints, iris patterns, or facial features.
-            </p>
-            <p>
-                The second point is reduced risk of credential theft. Unlike traditional authentication methods 
-                that rely on passwords or PINs, which can be stolen, forgotten, or easily guessed, biometrics 
-                cannot be easily compromised in the same way. This reduces the risk of credential theft.
-            </p>
-            <p>
-                Biometric authentication offers convenience for users by eliminating the need to remember and 
-                input complex passwords or carry physical tokens. Users can simply use their unique biometric 
-                traits, such as fingerprints or facial recognition, to authenticate themselves quickly and easily.
-            </p>
-            <p>
-                While biometric systems are not immune to attacks, advancements in biometric technology have 
-                improved resistance to spoofing attempts, such as using fake fingerprints or facial images.
-                Modern biometric systems incorporate anti-spoofing measures, such as liveness 
-                detection or multi-modal biometrics, to enhance security and reliability.
-            </p>
-            <p>
-                Overall, integrating biometrics into multi-factor authentication enhances security by providing a 
-                robust and reliable method of user authentication while offering convenience and a seamless user experience.
-            </p>
+    <section class="articles__container">
+        <div class="article__container" id="SFA">
+            <div class="article__info">
+                <h2 class="article__header">Single-factor Authentication(SFA)</h2>
+                <p>
+                    Authentication is the process of determining whether someone or something is, in fact, who or what it says it is. 
+                    Single-factor authentication (SFA) is the simplest form of authentication. With SFA, a person matches one credential to 
+                    verify themselves. 
+                </p>
+                <p>
+                    Note that SFA is not necessarily less secure than 2FA or MFA. SFA refers to the number of factors used -- in this case, one 
+                    -- to authenticate, and not to the type of authentication used. Passwords are the most common type of SFA used and are often compromised or forgotten. Best practices include strong password creation to make sure no one can access it. 
+                    However, fingerprints are another type of SFA and are considered one of the most secure methods available because they are 
+                    difficult to fake.
+                </p>
+                <p>
+                    It is common for passwords to be leaked by a cybercriminal and without an additional factor to your password to confirm your identity, all a cybercriminal needs is your password to gain access to your accounts.
+                    Oftentimes a users password is simple so that it is easy to remember. The more simple the password, the easier it is for a 
+                    cybercriminal to crack. A malicious user may guess your password because they know you personally or because they were able 
+                    to find out certain things about you, such as your birthdate, favorite actor/actress, or pet's name. A malicious user may 
+                    also crack your password by using a bot to generate the right combination of letters/numbers to match your simple, secret 
+                    identification method.
+                </p>
+            </div>
+            <div class="article__image">
+                <img src="./Assets/SingleAuth2.png">
+            </div>
+        </div>
+        <div class="article__container"id="TFA">
+            <div class="article__info">
+                <h2 class="article__header">Two-factor Authentication(2FA)</h2>
+                <p>
+                    With 2FA, users are required to provide two pieces of verifiable information to authenticate. 2FA was designed to add an 
+                    additional layer of security to sensitive information. Primary credentials and passwords are often forgotten or 
+                    compromised, so 2FA can be used to help ensure that sensitive information is secure.
+                    The two pieces of verifiable information requested must be from different categories. 
+                </p>
+                <p>
+                    For example, sign-on processes might 
+                    require that users provide their usernames and passwords (something they know), and a fingerprint (something they are) to 
+                    access their systems and applications. Or, sign-on processes might require that users provide their usernames and 
+                    passwords (something they know), and proof that their smartphone is in their possession (something they have).
+                </p>
+                <p>
+                    Most Internet users are likely familiar with SMS text-based 2FA systems. In this version, an app sends a numeric code to 
+                    the user's mobile phone at login. The user must enter both their password and this code to proceed. Only entering one or 
+                    the other is not enough. 2FA is the most common form of multi-factor authentication (MFA), which refers to any 
+                    authentication method where users must supply at least two pieces of evidence.
+                </p>
+                <p>
+                    2FA has been widely adopted because it helps strengthen account security. User passwords can be easily cracked or 
+                    falsified. 2FA adds another level of security by requiring a second factor. Not only do hackers need to steal two 
+                    credentials to break into a system, but the second factor is often something difficult to hack, like a fingerprint or 
+                    time-limited passcode.
+                </p>
+            </div>
+            <div class="article__image">
+                <img src="./Assets/TwoFactorAuth.png">
+            </div>
+        </div>
+        <div class="article__container" id="MFA">
+            <div class="article__info">
+                <h2 class="article__header">Multi-factor Authentication(MFA)</h2>
+                <p>
+                    Going back to the main topic, biometrics, and the advantages this provides in multi-factor    
+                    authentication and enhancing security. The first point will be the fact that biometrics provide a 
+                    highly secure method of authentication because they are based on unique physical characteristics 
+                    such as fingerprints, iris patterns, or facial features.
+                    The second point is reduced risk of credential theft. Unlike traditional authentication methods 
+                    that rely on passwords or PINs, which can be stolen, forgotten, or easily guessed, biometrics 
+                    cannot be easily compromised in the same way. This reduces the risk of credential theft.
+                </p>
+                <p>
+                    Biometric authentication offers convenience for users by eliminating the need to remember and 
+                    input complex passwords or carry physical tokens. Users can simply use their unique biometric 
+                    traits, such as fingerprints or facial recognition, to authenticate themselves quickly and easily.
+                    While biometric systems are not immune to attacks, advancements in biometric technology have 
+                    improved resistance to spoofing attempts, such as using fake fingerprints or facial images.
+                    Modern biometric systems incorporate anti-spoofing measures, such as liveness 
+                    detection or multi-modal biometrics, to enhance security and reliability.
+                </p>
+                <p>
+                    Overall, integrating biometrics into multi-factor authentication enhances security by providing a 
+                    robust and reliable method of user authentication while offering convenience and a seamless user experience.
+                </p>
+            </div>
+            <div class="article__image">
+                <img src="./Assets/MultipleLayerAuth2.jpg">
+            </div>
         </div>
     </section>
     <!-- FOOTER -->
